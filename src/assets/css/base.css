@@ -1,0 +1,36 @@
+@import './reset.css';
+
+/* 禁止用户复制文字 */
+body {
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+
+
+
+/* 过渡动画-向下展示 */
+/* .slide-down-enter, .slide-down-leave-to {
+    transform: translate3d(0, -100%, 0);
+}
+.slide-down-enter-to, .slide-down-leave {
+    transform: translate(0, 0, 0);
+}
+.fade-slide-right-enter-active, .fade-slide-right-leave-active {
+    transition: transform .2s linear;
+} */
+
+/* :root 获取根元素html */
+:root {
+    --color-text: #666;
+    --color-high-text: #ff5777;
+    --color-tint: #ff8198;
+    --color-background: #f3f3f3;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+}
